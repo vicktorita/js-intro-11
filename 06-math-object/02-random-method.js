@@ -21,8 +21,6 @@ newResult = Math.floor(result)
 finalResult = newResult + smallerNumber;
 
 let result = Math.floor(Math.random() * (max - min + 1)) + min;
-
-
 let result = Math.ceil(Math.random() * (max - min + 1)) + min - 1;
 let result = Math.round(Math.random() * (max - min)) + min;
 */
@@ -41,3 +39,4 @@ let min = Math.min(num1, num2);
 
 let r2 = Math.floor(Math.random() * (max - min + 1)) + min;
 console.log(r2);
+

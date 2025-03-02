@@ -1,3 +1,4 @@
+
 console.log('DO NOT EVER USE ; AFTER if condition');
 
 if(true) {

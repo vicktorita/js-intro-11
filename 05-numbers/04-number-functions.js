@@ -41,3 +41,5 @@ console.log(Number.parseFloat('10') + 5); // 15
 console.log(parseInt('100') + 1); // 101
 console.log(parseInt('100.99') + 1); // 101
 console.log(parseFloat('100.99') + 1); // 101.99
+
+

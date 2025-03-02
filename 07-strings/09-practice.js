@@ -31,3 +31,4 @@ let str2 = 'JavaScript';
 
 let res2 = str2.slice(0, 3) + str2.slice(-3);
 console.log(res2);
+

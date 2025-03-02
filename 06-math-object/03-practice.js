@@ -31,3 +31,4 @@ console.log(`Max number is ${max} and min number is ${min}`);
 let result = max - min;
 
 console.log(`The result = ${result}`);
+

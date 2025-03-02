@@ -1,3 +1,5 @@
+
+
 CLI -> Command Line Interface 
 GUI -> Graphical User Interface
 
@@ -104,34 +106,3 @@ Removes the file
 Are you familiar with Linux?
 Are you familiar with Linux commands?
 Can you tell me some Lunix commands you use daily?
-
-Step 1: Go to https://github.com/ and sign up
-
-Step 2: Check the default branch and make sure it is 'main'
-
-Step 3: Set up your global information as guided in the below link
-  https://git-scm.com/book/en/v2
-  Username: TechGlobalTest
-  Email: techglobal.test1@gmail.com
-
-git config --global user.name "TechGlobalTest"
-git config --global user.email techglobal.test1@gmail.com
-git config --global init.defaultBranch main
-
-Check all your global information with the below command
-git config --list
-
-
-git config --global user.name "vicktorita"
-git config --global user.email moonndsunkw@gmail.com 
-git config --global init.defaultBranch main
-
-SSH = Secure Shell used for authentication
-
-Step 1: Generate a new SSH key using the below command
- ssh-keygen
-
-Step 2: Get the public key and add it to your GitHub account
-More details at https://docs.github.com/en
-Get to HOME Directory:  C:\Users\{username}
-Transcript

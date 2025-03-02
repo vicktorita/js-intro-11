@@ -1,5 +1,5 @@
 // Immeadiately Invoked Function Expression
 
 (function () {
-    console.log('I AM IIFE!');
-  })();
+  console.log('I AM IIFE!');
+})();

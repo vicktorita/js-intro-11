@@ -193,3 +193,4 @@ const countString = str => {
 }
 
 console.log(countString("    Hello, my  name    is    John Doe    "))
+

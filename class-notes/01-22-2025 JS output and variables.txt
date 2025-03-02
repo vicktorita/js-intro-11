@@ -1,3 +1,4 @@
+
 Output Statements:
 console.log() function
 -This function is used to debug your code

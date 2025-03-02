@@ -1,3 +1,5 @@
+
+
 RECAP:
 Method vs Function 
 
@@ -66,3 +68,4 @@ biggerNumber - smallerNumber + 1
 
 getRandomNumber(5, 15);
 getRandomNumber(15, 5);
+
