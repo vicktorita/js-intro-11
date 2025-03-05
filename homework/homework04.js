@@ -111,6 +111,7 @@ for (let i = 0; i < storeObj.length; i++) {
 console.log(`Elements starting with 'B' or 'P' = ${countBP}`);
 console.log(`Elements having 'book' or 'pen' = ${countBookPen}`);
 
+
 console.log('                     Task - 13     \n');
 
 const numbers = [3, 5, 7, 10, 0, 20, 17, 10, 23, 56, 78];
@@ -159,26 +160,119 @@ function firstDuplicate(arr) {
   return -1;
 }
 
-console.log(firstDuplicate(['foo', 'abc', '123', 'bar' ]));
+console.log(firstDuplicate([123, 'abc', '123', 3, 'abc' ]));
 
 
 
 console.log('                     Task - 16     \n');
-const  arrayDuplicates= [];
 
-function getDuplicates( arr){
-  for (let i = 0; i <= arr.length - 1; i++) {
-    for (let j = i + 1; j <= arr.length - 1; j++) {
-      if (arr[i] === arr[j])
-        arrayDuplicates.push(arr[i]);
-      return arrayDuplicates;
-     }
-     
+
+function getDuplicates(arr) {
+  const arrayDuplicates = [];
+  const array = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (array.indexOf(arr[i]) === -1) {
+      array.push(arr[i]);
+    } else if (arrayDuplicates.indexOf(arr[i]) === -1) {
+      arrayDuplicates.push(arr[i]);
+    }
   }
-
-  
+  return arrayDuplicates;
 }
-console.log(getDuplicates('A', 'foo', '12',  12, 'bar', 'a', 'a', 'foo' ));
+console.log(getDuplicates(['A', 'foo', '12', 12, 'bar', 'a', 'a', 'foo']));
+
+
+console.log('                     Task - 17     \n');
+
+function reverseStringWords( str){
+  let wordStr =  str.split(" ");
+  let reverseStrWords= [];
+
+  for (let i = 0; i<= wordStr.length -1; i++){
+    if (wordStr[i] !== ' '){
+      reverseStrWords.push(wordStr[i].split("").reverse().join(""));
+    }
+  }
+  return reverseStrWords.join(" ");
+
+}
+
+console.log(reverseStringWords("I like JavaScript"));
+
+console.log('                     Task - 18     \n');
+
+function getEvens(num1, num2){
+  let min = Math.min(num1, num2);
+  let max = Math.max(num1, num2);
+  let evenNums = [];
+  for (let i = min; i<= max; i++){
+    if( i %2 === 0){
+    evenNums.push(i);
+    }
+  }
+  return evenNums;
+
+}
+console.log(getEvens(4,4));
+
+console.log('                     Task - 19     \n');
+
+let numsDivisileBy5 = [];
+function getMultipleOf5(num1, num2){
+   if(num1 > num2){
+  for(let i = num1; i<= num2; i++){
+    if(i % 5 ===0){
+   numsDivisileBy5.push(i);
+    }
+  }
+}
+else if (num1 > num2){
+  for(let i = num1; i>= num2; i--){
+    if(i % 5 ===0){
+   numsDivisileBy5.push(i);
+    }
+  }
+}
+else if(num1 === num2){
+  if(num1 % 5 === 0)
+    numsDivisileBy5.push(num1);
+}
+return numsDivisileBy5;
+}
+
+console.log(getMultipleOf5(5,5));
+
+
+console.log('                     Task - 20     \n');
+
+let newStrArray = [];
+function fizzBuzz(num1, num2 ){
+   if(num1 > num2) {
+    [num1, num2] = [num2, num1];
+   }
+
+   for(let i = num1; i <= num2; i++){
+
+    if (i % 3 === 0 && i % 5 ===0){
+        newStrArray.push('FizzBuzz')
+   }
+    else if(i % 3 ===0 ){
+      newStrArray.push('Fizz')
+    }
+    else if(i % 5 ===0 ){
+      newStrArray.push('Buzz')
+    }
+    else {
+      newStrArray.push(i.toString());
+    }
+ }
+ return newStrArray.join(' | ');
+}
+
+console.log(fizzBuzz(13,18));
+
+
+
 
 
 

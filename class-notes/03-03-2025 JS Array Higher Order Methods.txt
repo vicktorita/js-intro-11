@@ -7,8 +7,8 @@ callback function as an argument
 
 Callback: it is a function or method passed as an argument to another function or method
 
-sort((a, b) => a - b);
-sort((a, b) => b - a);
+sort((a, b) => a - b); increasing
+sort((a, b) => b - a); decresing
 
 Functional Programming
 

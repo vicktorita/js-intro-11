@@ -22,6 +22,7 @@ console.log(cities.findLast((city) => city.length === 6));
 console.log(cities.findIndex((city) => city === 'LA'));
 console.log(cities.find((city) => city.toLowerCase().includes('i'))); 
 console.log(cities.findLast((city) => city.length === 4));
+cities.toReversed().length === 4; // instead of find last
 
 console.log(cities.find((city) => city.length === 10)); // undefined
 console.log(cities.findIndex((city) => city.length === 10)); // -1
