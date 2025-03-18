@@ -1,4 +1,3 @@
-
 const Person = require("./Person");
 
 class Singer extends Person{
@@ -13,3 +12,5 @@ class Singer extends Person{
     return true;
   }
 }
+
+module.exports = Singer;
