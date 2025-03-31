@@ -29,8 +29,8 @@ function isDigitOrLetter(char) {
 }
 
 function isSpecial(char){
-  return !isDigitOrLetter(char) && !isSpace(char);
-  // return /^[^a-zA-Z0-9\s]$/.test(char);
+return !isDigitOrLetter(char) && !isSpace(char);
+ //  return /^[^a-zA-Z0-9\s]$/.test(char);
 }
 
 function isVowel(char) {
@@ -49,7 +49,9 @@ const CharacterHelper = {
   isVowel
 };
 
-module.exports.CharacterHelper = CharacterHelper;
+module.exports = CharacterHelper;
+//module.exports.CharacterHelper = CharacterHelper;
+
 
 
 

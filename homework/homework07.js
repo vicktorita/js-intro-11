@@ -1,4 +1,5 @@
-const { CharacterHelper } = require("../utils/CharacterHelper.js");
+const CharacterHelper= require("./../utils/CharacterHelper.js");
+
 
 
 console.log('                     Task - 1     \n');
@@ -179,16 +180,16 @@ categorizeCharacters("abc123$#%") 	-> [ 'abc', '123', '$#%' ]
 categorizeCharacters("12ab$%3c%") 	-> [ 'abc', '123', '$%%' ]
 
 */ 
-// function categorizeCharacters( str){
-//     const newArr = ['', '',''];
-//     for(char of str){
-//     if(CharacterHelper.isLetter) newArr[0] += char;
-//     else if(CharacterHelper.isDigit) newArr[1] =+ char;
-//     else if (CharacterHelper.isSpecial) newArr[2] =+ char;
-// }
-// return newArr;
-// }
-// console.log(categorizeCharacters("12ab$%3c%") );
+function categorizeCharacterss( str){
+    const newArr = ['', '',''];
+    for(char of str){
+    if(CharacterHelper.isLetter(char)) newArr[0] += char;
+    else if(CharacterHelper.isDigit(char)) newArr[1] += char;
+    else if (CharacterHelper.isSpecial(char)) newArr[2] +=  char;
+}
+return newArr;
+}
+console.log(categorizeCharacterss("12ab$%3c%") );
 
 
 function categorizeCharacters( str){
@@ -201,3 +202,4 @@ function categorizeCharacters( str){
 return newArr;
 }
 console.log(categorizeCharacters("12ab$%3c%") );
+console.log(categorizeCharacters("1234"));
