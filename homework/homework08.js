@@ -204,21 +204,18 @@ noXInVariables(["xyXyxy", "Xx", "ABC"]) 	-> ["yyy", "ABC"]
 
 */
 
-const noXInVariables = (arr) => {
-    return arr.filter(el => {
-        if (typeof el === 'string') {
-            let newStr = '';
-            for (let char of el) {
-                if (char !== 'x' && char !== 'X') {
-                    newStr += char;
-                }
-            }
-            return newStr.length > 0
+const noXInVariables =(arr) =>{
+    return arr.map(el =>{
+        if(typeof el === 'string'){
+           return  el.replace(/[xX]/g, '');
         }
-        else
-            return true;
+        return el;
+    })
+    .filter(el =>{
+        return typeof el ==='string' ? el.length > 0 : true;
     });
 }
+
 
 console.log(noXInVariables(["abc", 123, "#$%"]));
 console.log(noXInVariables(["xyz", 123, "#$%"]));
