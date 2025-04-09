@@ -394,6 +394,7 @@ console.log(getDuplicates([ 0, -4, -7, 0, 5, 10, 45, -7, 0 ]))
 console.log(getDuplicates([ 1, 2, 5, 0, 7 ]))
 console.log(getDuplicates(['A', 'foo', '12' , 12, 'bar', 'a', 'a', 'foo' ]))
 console.log(getDuplicates([ 'foo', '12' , 12, 'bar', 'a' ]))
+
 //Task 17
 /*
 Requirement:
