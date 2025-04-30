@@ -300,3 +300,5 @@ return arr.map(num =>
 })
 }
 console.log(arrFactorial([0,5]))
+
+
